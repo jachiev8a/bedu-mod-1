@@ -38,12 +38,12 @@ h1 {
     line-height: 45px;
 }
 
-.main-section {
+main {
     margin-top: 285px;
     text-align: center;
 }
 
-.main-section > * {
+main > * {
     font-family: 'Alegreya', sans-serif;
 }
 
@@ -202,4 +202,74 @@ h1 {
 .features .feature-card .feature-image img {
     margin-top: 0;
     height: 100%;
+}
+
+@media (max-width: 575px) {
+    .navbar,
+    .actions {
+        display: none;
+    }
+    main {
+        margin-top: 130px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    /** Media queries previos al banner **/
+    .banner > img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    /** Media queries previos al banner **/
+    .promo {
+      flex-direction: column;
+      max-width: 90%;
+    }
+  
+    .explanatory-video > video {
+      width: 100%;
+    }
+  
+    .publish {
+      margin-top: 10px;
+    }
+  
+    .publish > h3 {
+      font-size: 25px;
+      line-height: 1.2;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .publish > form {
+      flex-direction: column;
+    }
+  
+    .publish > form > div {
+      height: 50px;
+      margin-top: 10px;
+    }
+  
+    .publish > form > div > input {
+      width: 65%;
+    }
+}
+
+@media (max-width: 575px) {
+    /** Estilos de portada principal y sección de publicidad */
+    .features {
+      grid-template: repeat(4, 1fr) / 1fr;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    
+    .feature-image {
+      display: none;
+    }
 }
