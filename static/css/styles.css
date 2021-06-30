@@ -5,12 +5,73 @@ html, body {
 }
 
 body {
-    background-color: #8d8d8d;
+    /*background-color: #8d8d8d;*/
 }
 
 h1 {
     color: #025157;
+    font-family: "Alegreya", serif;
+    font-size: 60px;
+    margin-bottom: 24px;
 }
+
+h4 {
+    color: #46484c;
+    font-family: "Slabo 27px", serif;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* overlay Bootstrap */
+/* ----------------------------------------------------------------------------- */
+
+.navbar-light .nav-item .nav-link {
+    color: #025157;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #025157;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(3, 81, 77)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ----------------------------------------------------------------------------- */
+
+button {
+    background-color: #025157;
+    color: #fff;
+    border: none;
+    padding: 6px 20px;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+
+.enter-email {
+  height: 100%;
+  border-radius: 8px;
+}
+
+input.enter-email {
+  border: 1px solid #b6b6b6;
+  padding: 6px 20px;
+  width: 60%;
+  max-width: 250px;
+}
+
+button.enter-email {
+  background-color: #025157;
+  color: #fff;
+  border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 6px 20px;
+  margin-left: -10px;
+}
+
+/* ----------------------------------------------------------------------------- */
 
 .fixed-header {
     position: fixed;
@@ -39,7 +100,7 @@ h1 {
 }
 
 main {
-    margin-top: 285px;
+    margin-top: 280px;
     text-align: center;
 }
 
@@ -52,9 +113,10 @@ main > * {
 }
   
 .navbar {
-    width: 70%;
+    background-color: #fffbf7;
     text-align: center;
     color: #025157;
+    font-weight: 500;
 }
 
 .menu-item {
@@ -64,8 +126,8 @@ main > * {
 }
 
 .actions {
-    width: 15%;
     text-align: right;
+    font-weight: 600;
     font-size: 14px;
 }
 
@@ -76,6 +138,7 @@ main > * {
 
 .actions a {
     color: #67b54b;
+    font-weight: 100;
 }
 
 .actions button {
@@ -87,10 +150,6 @@ main > * {
     padding-bottom: 12px;
     border: 0;
     border-radius: 5px;
-}
-
-.publish {
-/* container styles if any */
 }
   
 .publish h3 {
@@ -124,6 +183,7 @@ main > * {
 }
 
 .container-explanatory-video {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -204,14 +264,158 @@ main > * {
     height: 100%;
 }
 
+/* Sucess Stories */
+
+.success-stories {
+    background-color: #a1d683;
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+  
+.success-stories .overview {
+    flex: 2;
+    padding-right: 100px;
+}
+  
+.success-stories .overview h2 {
+    font-family: "Alegreya", serif;
+    font-size: 51px;
+    line-height: 61px;
+    color: #025157;
+}
+  
+.success-stories .overview p {
+    color: #343434;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+  
+.success-stories .overview button {
+    font-size: 14px;
+    padding: 12px 12px 6px 12px;
+    border-radius: 8px;
+    height: 45px;
+    font-weight: 600;
+    margin-left: 0;
+}
+  
+.success-stories .overview img {
+    width: 500px;
+    max-width: 100%;
+    display: block;
+    margin-top: 1em;
+}
+
+/* Sucess Stories - Carousel */
+
+.success-stories .stories-carousel {
+    flex: 1;
+}
+  
+.success-stories .stories-carousel .carousel-indicators {
+    position: unset;
+}
+  
+.success-stories .stories-carousel .card {
+    max-width: 370px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+  
+.success-stories .stories-carousel .card .card-media img {
+    width: 100%;
+    max-height: 16vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+  
+.success-stories .stories-carousel .card .card-media figure {
+    margin-top: 0;
+}
+  
+.success-stories .stories-carousel .card .card-media {
+    position: relative;
+}
+  
+.success-stories .stories-carousel .card .card-media .company {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #f9da73;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.success-stories .stories-carousel .card .card-media .company img {
+    max-width: 75%;
+}
+  
+.success-stories .stories-carousel .card .card-body,
+.success-stories .stories-carousel .card .card-footer {
+    padding: 25px;
+}
+  
+.success-stories .stories-carousel .card .card-body h4 {
+    color: #025157;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+  
+.success-stories .stories-carousel .card .card-body h3 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+  
+.success-stories .stories-carousel .card .card-body .results {
+    display: flex;
+    align-items: center;
+    color: #828282;
+}
+  
+.success-stories .stories-carousel .card .card-body .results img {
+    width: 26px;
+    margin-right: 20px;
+}
+  
+.success-stories .stories-carousel .card .card-body .results p {
+    margin-top: 0;
+}
+  
+.success-stories .stories-carousel .card .card-footer {
+    margin-bottom: 20px;
+    background-color: unset;
+    border-top: unset;
+}
+  
+.success-stories .stories-carousel .card .card-footer button {
+    display: block;
+    margin-left: 0;
+    border-radius: 5px;
+    font-size: 13;
+    font-weight: 600;
+    padding: 12px 20px;
+    width: 100%;
+}
+
+
 @media (max-width: 575px) {
-    .navbar,
-    .actions {
-        display: none;
-    }
+
     main {
         margin-top: 130px;
     }
+    
     h1 {
         font-size: 30px;
     }
@@ -273,3 +477,112 @@ main > * {
       display: none;
     }
 }
+
+/* ---------------------- How does it work ---------------------- */
+
+.how-does-it-work {
+    background-color: #fffbf7;
+    padding: 5% 10%;
+    text-align: center;
+}
+
+.how-does-it-work .title {
+    color: #025157;
+    font-family: "Alegreya", serif;
+    font-size: 60px;
+    margin-bottom: 24px;
+}
+
+.how-does-it-work .description {
+    max-width: 60%;
+    color: #46484c;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.how-does-it-work .description a {
+    color: #67b54b;
+    text-decoration: none;
+}  
+
+.how-does-it-work button {
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 12px 12px 6px 12px;
+    height: 45px;
+    margin-left: 0;
+    border-radius: 8px;
+    margin-top: 6px;
+}
+
+.how-does-it-work .steps {
+    display: flex;
+    margin-top: 70px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.how-does-it-work .steps .card-step {
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+}
+  
+.how-does-it-work .steps .card-step .card-step-image {
+    position: relative;
+    height: 350px;
+}
+  
+.how-does-it-work .steps .card-step .card-step-image .card-step-icon {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 21px;
+}
+  
+.how-does-it-work .steps .card-step .card-step-image .card-step-bg {
+    width: 100%;
+    height: 100%;
+}
+  
+.how-does-it-work .steps .card-step .card-step-body {
+    padding: 25px;
+}
+  
+.how-does-it-work .steps .card-step .card-step-body h3 {
+    font-size: 30px;
+    line-height: 36px;
+    font-family: "Alegreya", serif;
+    color: #025157;
+    font-weight: 400;
+    text-align: center;
+}
+  
+.how-does-it-work .steps .card-step .card-step-body p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #46484c;
+    font-weight: 400;
+    height: 85px;
+    margin-bottom: 16px;
+}
+  
+.how-does-it-work .steps .card-step .card-step-body a {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+}
+  
+
+
+
+/* ------------------------------ */
+
+
