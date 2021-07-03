@@ -1,0 +1,27 @@
+/** headers.scss */
+/** ---------------------------------------------------------------------- */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+}
+
+.header {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* hack for removing spaces */
+    font-size: 0;
+    height: 45px;
+    font-family: sans-serif;
+}
+
+.header > * {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 45px;
+}

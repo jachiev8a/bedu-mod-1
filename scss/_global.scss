@@ -1,0 +1,37 @@
+/** _global.scss */
+/** ---------------------------------------------------------------------- */
+
+/** Colores */
+$dark-green-title: #025157;
+$dark-green-text: #135359;
+$white: #ffffff;
+$gray: #4a4a4a;
+$light-gray: #979797;
+$light-green: #67b54b;
+
+/** ----- Fonts ----- */
+$font-matcha-title: "Alegreya", serif;
+$font-google: "Roboto", sans-serif;
+
+/** ----- Placeholders ----- */
+%base-title {
+    font-family: $font-matcha-title;
+    color: $dark-green-text;
+    font-weight: 500;
+}
+
+/** ----- Mixins ----- */
+
+@mixin mixin-mq-matcha-title($size: 30px, $height: 40px) {
+    font-family: $font-matcha-title;
+    font-size: $size;
+    line-height: $height;
+    text-align: center;
+}
+
+/* mixin for all matcha titles (media query) */
+.mixin-mq-matcha-title {
+    @include mixin-mq-matcha-title;
+}
+
+/** ---------------------------------------------------------------------- */

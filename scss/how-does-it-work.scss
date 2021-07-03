@@ -1,0 +1,109 @@
+/** how-does-it-work.scss */
+/** ---------------------------------------------------------------------- */
+
+@use 'global' as *;
+
+.how-does-it-work {
+    
+    background-color: #fffbf7;
+    padding: 5% 10%;
+    text-align: center;
+    
+    .title {
+        @extend %base-title;
+        font-size: 60px;
+        margin-bottom: 24px;
+    }
+
+    .description {
+        max-width: 60%;
+        color: #46484c;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 0 auto;
+        margin-bottom: 16px;
+
+        a {
+            color: #67b54b;
+            text-decoration: none;
+        }
+    }
+    
+    button {
+        font-size: 14px;
+        font-weight: 600;
+        padding-top: 12px 12px 6px 12px;
+        height: 45px;
+        margin-left: 0;
+        border-radius: 8px;
+        margin-top: 6px;
+    }
+
+    .steps {
+        display: flex;
+        margin-top: 70px;
+        grid-template-columns: repeat(4, 1fr);
+    
+        .card-step {
+
+            /* flex: 1; to make each step take a percentage */
+            /* flex: 25%; to make each step take a percentage */
+            
+            flex: 25%;
+            background-color: #fff;
+            border: 1px solid #dadada;
+            border-radius: 5px;
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: left;
+        
+            .card-step-image {
+                position: relative;
+                height: 350px;
+
+                .card-step-icon {
+                    position: absolute;
+                    top: 25px;
+                    left: 25px;
+                    width: 21px;
+                }
+
+                .card-step-bg {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .card-step-body {
+                padding: 25px;
+                
+                h3 {
+                    font-size: 30px;
+                    line-height: 36px;
+                    font-family: "Alegreya", serif;
+                    color: #025157;
+                    font-weight: 400;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: 15px;
+                    line-height: 1.5;
+                    color: #46484c;
+                    font-weight: 400;
+                    height: 85px;
+                    margin-bottom: 16px;
+                }
+
+                a {
+                    font-size: 16px;
+                    line-height: 1.4;
+                    color: #67b54b;
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
