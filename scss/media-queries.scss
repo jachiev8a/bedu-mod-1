@@ -163,5 +163,17 @@
 
     .faq h2 {
         @include mixin-mq-matcha-title(15px, 20px);
-    }    
+    }
+}
+
+@media (max-width: 575px) {
+
+    .home-people {
+        height: 150px;
+    }
+    
+    .faq h2 {
+        @include mixin-mq-matcha-title(15px, 20px);
+    }
+
 }

@@ -1,0 +1,11 @@
+/** home-people.scss */
+/** ---------------------------------------------------------------------- */
+@use 'global' as *;
+
+.home-people {
+    background-image: url("https://getmatcha.com/wp-content/themes/getmatcha/css/../img/home_people.png");
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+    height: 350px;
+}

@@ -3,7 +3,7 @@
 /** Colores */
 /** ----- Fonts ----- */
 /** ----- Placeholders ----- */
-.faq h2, .how-does-it-work .title, .success-stories .overview h2, .promo .publish h3 {
+.faq h2, .try-it h2, .blog .title, .how-does-it-work .title, .success-stories .overview h2, .promo .publish h3 {
   font-family: "Alegreya", serif;
   color: #135359;
   font-weight: 500;
@@ -517,6 +517,165 @@ button.enter-email {
   text-decoration: none;
 }
 
+/** blog.scss */
+/** ---------------------------------------------------------------------- */
+.blog {
+  background-color: #ffffff;
+  max-width: unset;
+  padding: 5% 10%;
+}
+.blog .process-list {
+  margin-top: 40px;
+  margin-bottom: 36px;
+}
+.blog .process-list .process {
+  margin-bottom: 25px;
+}
+.blog .process-list .process > div > h3 {
+  color: #025157;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 500;
+}
+.blog .process-list .process > div > p {
+  color: #135359;
+  margin: 0;
+}
+.blog .process-list .process .process-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  text-align: center;
+}
+.blog .process-list .process .process-icon img {
+  height: 100%;
+}
+.blog button {
+  height: auto;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 12px;
+  width: 180px;
+  margin-bottom: 15px;
+}
+.blog .card .card-body .metadata .category {
+  color: #67b54b;
+}
+.blog .card .card-body .metadata .read-time {
+  color: #979797;
+}
+.blog .card .card-body .author img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+.blog .card .card-body .author p {
+  margin-left: 8px;
+  font-weight: 600;
+}
+
+/** home-people.scss */
+/** ---------------------------------------------------------------------- */
+.home-people {
+  background-image: url("https://getmatcha.com/wp-content/themes/getmatcha/css/../img/home_people.png");
+  background-position: center;
+  background-size: cover;
+  background-color: white;
+  height: 350px;
+}
+
+/** try-it.scss */
+/** ---------------------------------------------------------------------- */
+.try-it {
+  padding: 5% 5% 2%;
+  background-color: #96d178;
+  margin-top: -30px;
+}
+.try-it form {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.try-it p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.try-it input {
+  border-radius: 8px;
+  border: 1px solid #b6b6b6;
+  padding: 6px 20px;
+  width: 50%;
+  max-width: 250px;
+}
+.try-it button {
+  height: 100%;
+  border-radius: 8px;
+  background-color: #025157;
+  color: #fff;
+  border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 6px 20px;
+  margin-left: -10px;
+}
+
+/** cta.scss */
+/** ---------------------------------------------------------------------- */
+.cta {
+  padding: 5% 10% 0;
+  margin: 0;
+  max-width: unset;
+}
+.cta .box {
+  background-color: #025157;
+  color: #fff;
+  padding: 5%;
+  border-radius: 10px;
+}
+.cta .box h2 {
+  font-family: "Alegreya", serif;
+  font-size: 34px;
+  max-width: 340px;
+  line-height: 1.3;
+}
+.cta .box p {
+  color: #fff;
+  margin-top: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  font-size: 17px;
+}
+.cta .box form input {
+  vertical-align: middle;
+  border-radius: 8px;
+  border: 1px solid #b6b6b6;
+  padding: 6px 20px;
+  width: 50%;
+  max-width: 250px;
+}
+.cta .box form button {
+  background-color: #67b54b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 6px 20px;
+  margin-left: -10px;
+}
+.cta .box form + p {
+  color: #b3cbcd;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  max-width: 340px;
+}
+
+.cta .box p > a {
+  color: #6abf4b;
+}
+
 /** faq.scss */
 /** ---------------------------------------------------------------------- */
 .faq {
@@ -694,6 +853,18 @@ button.enter-email {
   }
 }
 @media (max-width: 575px) {
+  .faq h2 {
+    font-family: "Alegreya", serif;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .home-people {
+    height: 150px;
+  }
+
   .faq h2 {
     font-family: "Alegreya", serif;
     font-size: 15px;
